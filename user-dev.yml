@@ -1,0 +1,19 @@
+server:
+  #  服务端口
+  port: ${port:9091}
+# DB 配置
+spring:
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spring_boot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    password: root
+    username: root
+
+# 配置eurekaserver
+eureka:
+  client:
+    service-url:
+      # 注册中心地址
+      defaultZone: http://127.0.0.1:10086/eureka
