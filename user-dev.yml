@@ -1,7 +1,7 @@
 server:
-  #  ·şÎñ¶Ë¿Ú
+  #  æœåŠ¡ç«¯å£
   port: ${port:9091}
-# DB ÅäÖÃ
+# DB é…ç½®
 spring:
   application:
     name: user-service
@@ -11,9 +11,11 @@ spring:
     password: root
     username: root
 
-# ÅäÖÃeurekaserver
+# é…ç½®eurekaserver
 eureka:
   client:
     service-url:
-      # ×¢²áÖĞĞÄµØÖ·
+      # æ³¨å†Œä¸­å¿ƒåœ°å€
       defaultZone: http://127.0.0.1:10086/eureka
+test:
+  hello: nihao
